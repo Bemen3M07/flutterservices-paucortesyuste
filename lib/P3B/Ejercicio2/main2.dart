@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
       ),
       home: const Homescreen(),
-    ); // <-- faltaba punto y coma aquí
+    ); //*TODO ESTO ESTA ECHO POR PAU CORTES YUSTE a
   }
 }
 
