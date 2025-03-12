@@ -1,7 +1,16 @@
 import 'package:empty/P3B/Ejercicio2/Screens/Home_Screen.dart';
+import 'package:empty/P3B/Ejercicio2/providers/counter_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(
+    ChangeNotifierProvider(
+      create:(_)=>CounterProvider() ,
+      child: const MyApp(),
+    )
+  );
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

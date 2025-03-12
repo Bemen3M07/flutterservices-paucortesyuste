@@ -1,4 +1,6 @@
+import 'package:empty/P3B/Ejercicio2/providers/counter_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class page3 extends StatefulWidget {
   const page3({super.key});
@@ -11,7 +13,8 @@ class _page3State extends State<page3> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Page 3'),
-    );
+      child: Text(context.watch<CounterProvider>().counter.toString(),style: const TextStyle(fontSize:50)),
+
+    );    
   }
 }
